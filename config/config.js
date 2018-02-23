@@ -1,8 +1,7 @@
 module.exports = {
   buildPath: 'dist',
+  hot: false,
   hash: false,
-  host: false,
-  useHost:false,
   loaders:{
     scss: false,
     sass: false,
@@ -10,7 +9,6 @@ module.exports = {
     stylus: false
   },
   plugins: {
-    buildfile: false,
     manifest: false,
     manifestDeps: false,
     imagemini: false,
