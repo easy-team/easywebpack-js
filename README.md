@@ -20,7 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/easywebpack-js.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-js
 
-javascript file compress for easywebpack.
+webpack javascript file compress for easywebpack.
 
 ## Install
 
