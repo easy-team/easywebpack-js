@@ -43,12 +43,8 @@ describe('client.test.js', () => {
       });
       const webpackConfig = builder.create();
       expect(webpackConfig.entry).to.have.keys(['index']);
-      
-      const plugins = webpackConfig.plugins;
-      const ugilyfyJS = plugins.some(plugin => {
-        return plugin.__plugin__ === 'uglifyjs-webpack-plugin';
-      });
-      expect(ugilyfyJS).to.be.true;
+      expect(webpackConfig.mode).to.equal('production');
+      expect(JSON.stringify(webpackConfig.optimization)).to.equal('{}');
     });
   });
 });
