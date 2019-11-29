@@ -179,7 +179,7 @@ module.exports = {
 
     ![](/doc/images/react-lib.png)
 
- - [vue-common-lib](/example/react-common-lib) Vue common lib and example
+ - [vue-common-lib](/example/vue-common-lib) Vue common lib and example
 
     ![](/doc/images/vue-lib.png)
 
