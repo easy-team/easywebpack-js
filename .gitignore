@@ -8,11 +8,10 @@ run/
 *.swp
 .vscode
 *.iml
-dist
 public/
 config/manifest.json
 package-lock.json
 yarn.lock
 coverage.lcov
 .nyc_output
-
+example/*/test/dist

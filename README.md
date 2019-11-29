@@ -29,11 +29,13 @@ Buiding JavaScript Lib for Webpack
 ```bash
 
 // babel 6
+
 $ npm i easywebpack-js --save-dev
 
 or
 
 // babel 7
+
 $ npm i @easy-team/easywebpack-js --save-dev
 
 ```
@@ -48,7 +50,7 @@ $ npm i easywebpack-js@3 --save-dev
 
 ### Node Build Mode
 
-- write webpack build config for easywebpack-js
+- write webpack build config
 
 ```js
 // build/index.js
@@ -62,7 +64,7 @@ const config = {
 easywebpack.build(config);
 ```
 
-- node build mode
+- build script command
 
 ```js
 {
@@ -100,12 +102,12 @@ module.exports = {
 }
 ```
 
-## Webapck Building Lib
+## Webapck Building Script Lib
 
 ### Write React Lib Entry Code
 
 > ${root}/src/react-lib.js
-
+ 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -135,7 +137,7 @@ module.exports = {
 }
 ```
 
-###  Webpack React Project Config
+### Project Webpack Config
 
 > ${root}/webpack.config.js
 
@@ -149,7 +151,7 @@ module.exports = {
 }
 ```
 
-### Add Script Link
+### HTML Script Link
 
 ```html
 <!DOCTYPE html>
@@ -165,6 +167,16 @@ module.exports = {
   </body>
 </html>
 ```
+
+### Common Script Lib Example
+
+ - [react-common-lib](/example/react-common-lib) React common lib and example 
+
+    ![](/doc/images/react-lib.png)
+
+ - [vue-common-lib](/example/react-common-lib) Vue common lib and example
+
+    ![](/doc/images/vue-lib.png)
 
 
 ## License
