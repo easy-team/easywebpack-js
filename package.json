@@ -1,7 +1,7 @@
 {
-  "name": "easywebpack-js",
-  "version": "4.0.2",
-  "description": "webpack javascript build solution for easywebpack",
+  "name": "@easy-team/easywebpack-js",
+  "version": "4.0.0",
+  "description": "Webpack Javascript Lib Building for easywebpack",
   "keywords": [
     "webpack",
     "easywebpack",
@@ -9,7 +9,7 @@
     "ugilyfy js"
   ],
   "dependencies": {
-    "easywebpack": "^4.0.0",
+    "@easy-team/easywebpack": "^4.0.0",
     "cross-env": "^5.0.1"
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "nyc": "^11.1.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "lint": "eslint .",
