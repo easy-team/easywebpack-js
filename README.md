@@ -28,15 +28,12 @@ Buiding JavaScript Lib for Webpack
 
 ```bash
 
-// babel 6
-
-$ npm i easywebpack-js --save-dev
+$ npm i @easy-team/easywebpack-js --save-dev      // babel 7
 
 or
 
-// babel 7
+$ npm i easywebpack-js --save-dev                 // babel 6
 
-$ npm i @easy-team/easywebpack-js --save-dev
 
 ```
 
@@ -46,9 +43,17 @@ $ npm i @easy-team/easywebpack-js --save-dev
 $ npm i easywebpack-js@3 --save-dev
 ```
 
-## Webapck Building Script
+## Document
 
-### Node Build Mode
+- https://yueque.com/easy-team
+- http://easyjs.cn
+
+
+## QuickStart
+
+### Webapck Building Script
+
+#### Node Build Mode
 
 - write webpack build config
 
@@ -76,7 +81,7 @@ easywebpack.build(config);
 ```
 
 
-### easywebpack-cli
+#### easywebpack-cli
 
 - write easywebpack-cli for easywebpack-js solution
 
@@ -102,9 +107,9 @@ module.exports = {
 }
 ```
 
-## Webapck Building Script Lib
+### Building Webpack Common Script Lib
 
-### Write React Lib Entry Code
+#### Write React Lib Entry Code
 
 > ${root}/src/react-lib.js
  
@@ -121,7 +126,7 @@ export default {
 }
 ```
 
-### Webpack React Lib Building
+#### Webpack React Lib Building
 
 > ${root}/webpack.config.js
 
@@ -137,7 +142,7 @@ module.exports = {
 }
 ```
 
-### Project Webpack Config
+#### Project Webpack Config
 
 > ${root}/webpack.config.js
 
@@ -151,7 +156,7 @@ module.exports = {
 }
 ```
 
-### HTML Script Link
+#### HTML Script Link
 
 ```html
 <!DOCTYPE html>
@@ -168,7 +173,7 @@ module.exports = {
 </html>
 ```
 
-### Common Script Lib Example
+## Example
 
  - [react-common-lib](/example/react-common-lib) React common lib and example 
 
