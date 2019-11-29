@@ -20,14 +20,22 @@
 [download-image]: https://img.shields.io/npm/dm/easywebpack-js.svg?style=flat-square
 [download-url]: https://npmjs.org/package/easywebpack-js
 
-Webpack javascript file compress for easywebpack.
+Buiding JavaScript Lib for Webpack
 
 ## Install
 
 - Webpack 4
 
 ```bash
+
+// babel 6
 $ npm i easywebpack-js --save-dev
+
+or
+
+// babel 7
+$ npm i @easy-team/easywebpack-js --save-dev
+
 ```
 
 - Webpack 3
@@ -36,7 +44,7 @@ $ npm i easywebpack-js --save-dev
 $ npm i easywebpack-js@3 --save-dev
 ```
 
-## Usage
+## Webapck Building Script
 
 ### Node Build Mode
 
@@ -72,7 +80,7 @@ easywebpack.build(config);
 
 ```js
 // ${app_root}/webpack.config.js
-const easywebpack = require('easywebpack-js');
+const easywebpack = require('@easy-team/easywebpack-js');
 module.exports = {
   framework: 'js',
   entry: {
@@ -91,6 +99,73 @@ module.exports = {
  }
 }
 ```
+
+## Webapck Building Lib
+
+### Write React Lib Entry Code
+
+> ${root}/src/react-lib.js
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// window.React = React;
+// window.ReactDOM = ReactDOM;
+
+export default {
+  React,
+  ReactDOM
+}
+```
+
+### Webpack React Lib Building
+
+> ${root}/webpack.config.js
+
+```javascript
+module.exports = {
+  framework: 'js',
+  entry: {
+    'react-lib': 'scr/react-lib.js'
+  },
+  output: {
+    library: "ReactLib" 
+  }
+}
+```
+
+###  Webpack React Project Config
+
+> ${root}/webpack.config.js
+
+```js
+module.exports = {
+  ....
+  externals: {
+    'react': 'ReactLib.default.React',
+    'react-dom': 'ReactLib.default.ReactDOM'
+  },
+}
+```
+
+### Add Script Link
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>React Common Lib Test</title>
+    <script src="/react-lib.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
+```
+
 
 ## License
 
